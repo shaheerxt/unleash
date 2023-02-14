@@ -15,7 +15,7 @@ export type ValidatedClientMetrics = {
     environment?: string;
     appName: string;
     instanceId: string;
-    bucket: IMetricsBucket;
+    bucket: Map<string, IMetricsBucket>;
 };
 
 export const clientMetricsSchema = joi

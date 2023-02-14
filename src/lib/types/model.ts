@@ -342,7 +342,7 @@ export interface IMetricCounts {
 export interface IMetricsBucket {
     start: Date;
     stop: Date;
-    toggles: IMetricCounts;
+    toggles: { [key: string]: IMetricCounts };
 }
 
 export interface IImportFile extends ImportCommon {
